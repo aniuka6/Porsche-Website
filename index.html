@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1,0" />
+    <title>Car Website Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Mulish:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header" id="header">
+      <nav>
+        <img src="images/logo.png" class="logo" />
+        <ul>
+          <li><a href="#" id="Cayenne">Cayenne</a></li>
+          <li><a href="#" id="Cayman">Cayman</a></li>
+          <li><a href="#" id="Macan">Macan</a></li>
+          <li><a href="#" id="Panamera">Panamera</a></li>
+          <li><a href="#" id="911">911 GT3</a></li>
+        </ul>
+        <a href="#" class="btn">Zarezerwuj</a>
+      </nav>
+      <div class="info">
+        <div>
+          <h2 id="mph">5.7 s</h2>
+          <p>60 mph</p>
+        </div>
+        <div>
+          <h2 id="speed">154 mph</h2>
+          <p>Top Speed</p>
+        </div>
+        <div>
+          <h2 id="power">348 hp</h2>
+          <p>Max Power</p>
+        </div>
+        <div class="line"></div>
+        <div>
+          <h2 id="model">Cayenne</h2>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var header = document.getElementById("header");
+      var Cayenne = document.getElementById("Cayenne");
+      var Cayman = document.getElementById("Cayman");
+      var Macan = document.getElementById("Macan");
+      var Panamera = document.getElementById("Panamera");
+      var m911 = document.getElementById("911");
+      var model = document.getElementById("model");
+      var mph = document.getElementById("mph");
+      var power = document.getElementById("power");
+
+      Cayenne.onclick = function () {
+        header.style.backgroundImage = "url(images/cayenne.jpg)";
+        model.innerHTML = "Cayenne";
+        mph.innerHTML = "5.7 s";
+        speed.innerHTML = "154 mph";
+        power.innerHTML = "348 hp";
+      };
+      Cayman.onclick = function () {
+        header.style.backgroundImage = "url(images/cayman.jpg)";
+        model.innerHTML = "Cayman";
+        mph.innerHTML = "4.9 s s";
+        speed.innerHTML = "170 mph";
+        power.innerHTML = "300 hp";
+      };
+      Macan.onclick = function () {
+        header.style.backgroundImage = "url(images/macan.jpg)";
+        model.innerHTML = "Macan";
+        mph.innerHTML = "6.0 s";
+        speed.innerHTML = "144 mph";
+        power.innerHTML = "261 hp";
+      };
+      Panamera.onclick = function () {
+        header.style.backgroundImage = "url(images/panamera.jpg)";
+        model.innerHTML = "Panamera";
+        mph.innerHTML = "5.0 s";
+        speed.innerHTML = "169 mph";
+        power.innerHTML = "348 hp";
+      };
+      m911.onclick = function () {
+        header.style.backgroundImage = "url(images/iris.jpg)";
+        model.innerHTML = "911 GT3";
+        mph.innerHTML = "3.2 s";
+        speed.innerHTML = "197 mph";
+        power.innerHTML = "502 hp";
+      };
+    </script>
+  </body>
+</html>
